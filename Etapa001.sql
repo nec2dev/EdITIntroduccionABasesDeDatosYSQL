@@ -47,6 +47,7 @@ CREATE TABLE ARTICULOS(
 );
 DESC ARTICULOS;
 
+DESC FACTURAS;
 /*5. Crea una tabla con el nombre CLIENTES
 dentro de la base de datos y tomar en
 consideración la estructura definida en la
