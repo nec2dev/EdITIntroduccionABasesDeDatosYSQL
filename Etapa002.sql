@@ -14,6 +14,7 @@ USE laboratorio;
 DESC clientes_neptuno;
 SELECT * FROM clientes_neptuno;
 
+#<-------------Etapa 2.2------------->
 /*2. Llevar a cabo los siguientes cambios en la tabla CLIENTES_NEPTUNO importada anteriormente. 
 Respetar las consignas detalladas a continuación y utilizar el comando ALTER TABLE:
 a. Campo IDCliente: debe ser de tipo VARCHAR, debe admitir hasta 5 caracteres como máximo y debe ser el campo 
@@ -28,10 +29,12 @@ ALTER TABLE clientes_neptuno
     MODIFY Pais VARCHAR(15) NOT NULL;
 DESC clientes_neptuno;
 
+#<-------------Etapa 2.3------------->
 /*3. Cambiar el nombre de la tabla CLIENTES por 
 CONTACTOS.*/
 RENAME TABLE clientes TO contactos;
 
+#<-------------Etapa 2.4------------->
 /*4. Importar el archivo CSV con el nombre CLIENTES a la base de 
 datos LABORATORIO. Y tener en cuenta las siguientes indicaciones:
 a. Este archivo lo encontrarás disponible en el 
@@ -41,6 +44,7 @@ c. Mantener los tipos de datos asignados al
 momento de la importación*/
 DESC clientes;
 
+#<-------------Etapa 2.5------------->
 /*5. Llevar a cabo los siguientes cambios en la  tabla CLIENTES importada anteriormente. 
 Respetar las consignas detalladas a continuación y utiliza el comando ALTER TABLE:
 a. Campo Cod_Cliente: debe ser de tipo VARCHAR, debe admitir hasta 7 caracteres como 
@@ -59,6 +63,7 @@ ALTER TABLE clientes
     MODIFY responsable VARCHAR(30);
 DESC clientes;
 
+#<-------------Etapa 2.6------------->
 /*6. Importar el archivo CSV con el nombre 
 PEDIDOS a la base de datos LABORATORIO. 
 Y tener en cuenta las siguientes indicaciones:
@@ -67,6 +72,7 @@ b. No cambiar el nombre de la tabla.
 c. Mantener los tipos de datos asignados al momento de la importación.*/
 DESC pedidos;
 
+#<-------------Etapa 2.7------------->
 /*7. Llevar a cabo los siguientes cambios en la 
 tabla PEDIDOS importada anteriormente. 
 Respetar las consignas detalladas a continuación y utilizar el comando ALTER TABLE:
@@ -94,6 +100,7 @@ INSERT INTO pedidos VALUES (77777, 'ABC123Z', '2022-08-08', 'BARRANI', 'SI');
 INSERT INTO pedidos VALUES (66666, 'ABC123Z', '2022-08-08', '', 'SI');
 SELECT * FROM pedidos;*/
  
+ #<-------------Etapa 2.8------------->
 /*8. Importar el archivo CSV: PRODUCTOS a la base de datos LABORATORIO. Y tener en 
 cuenta las siguientes indicaciones:
 a. Este archivo lo encontrarás disponible en  el área de descargas del presente módulo.
@@ -101,6 +108,7 @@ b. No cambiar el nombre de la tabla.
 c. Mantener los tipos de datos asignados al momento de la importación.*/
 DESC productos;
 
+#<-------------Etapa 2.9------------->
 /*9. Llevar a cabo los siguientes cambios en la tabla PRODUCTOS importada en el paso 
 anterior. Respetar las consignas detalladas a continuación, utilizando el comando ALTER 
 TABLE:
